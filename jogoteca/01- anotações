@@ -1,1 +1,31 @@
-aplicações do framework
+como funciona a wer / http
+o navegador faz uma request(requiseção) para o servidor e assim liberar o acesso
+o servisor responde com uma response para liberar o acesso
+
+from flask import Flask
+no primeiro flask estamos referenciando a biblioteca e no outro estamos importando a função Flask
+
+app = Flask(__name__)
+o name ele faz uma referencia ao proprio arquivo
+
+usando chaves duplas podemos colocar codigo python no html
+
+sintaxe para fazer estutura de repetição
+{% for jogo in jogos %}
+{% endfor %}
+
+
+def .nome da função.():
+    return render_template('caminho do arquivo html', .variaveis do html. )
+
+Muito tranquilo de fazer esta melhoria, não é? Tem vários outros filtros que podem ajudar, como:
+
+upper: colocar os caracteres em caixa alta;
+round: arredondar números;
+trim: remover espaços do início e do fim do texto;
+default('texto exibido por padrão') - quando queremos mostrar algo, caso a variável esteja vazia ou nula.
+Tipos de Delimitadores do Jinja2:
+
+{%....%}: usado para inserir estruturas Python dentro de um arquivo html;
+{{....}}: usado para facilitar a exibição de código python como um output em um template HTML. Alternativa: {% print(....) %};
+{#....#}: usado para adicionar comentários que não serão exibidos no output do template HTML
